@@ -11,4 +11,4 @@ b(ricardo,renato,medico,medico).
 b(renato,rogerio,musico,musico).
 b(rogerio,renato,professor,professor).
 b(ricardo,renato,professor,musico).
-profissoes(RI,RO,RE) :- b(ricardo,renato,RI,RE),b(renato,rogerio,RE,RO),b(rogerio,renato,RO,RE),b(ricardo,renato,RI,RE),(RI \= RE).
+profissoes(RI,RO,RE) :- b(ricardo,renato,RI,RE),b(renato,rogerio,RE,RO),b(rogerio,renato,RO,RE),b(ricardo,renato,RI,RE),(RI \= RE),(RI \= RO),(RE \= RO).
